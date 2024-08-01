@@ -2,7 +2,7 @@
 Нужно, сделать только в первый раз
 ## Устаноква зависимостей
 ```bash
-pip install -r t.txt
+pip install -r requirements.txt
 ```
 
 ## Работа с бд
@@ -20,7 +20,7 @@ uvicorn app.main:app
 
 # Когда будешь делать очередной pull
 ```bash
-pip install -r t.txt
+pip install -r requirements.txt
 ```
 ```bash
 alembic upgrade head
