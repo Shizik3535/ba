@@ -9,6 +9,11 @@ from app.admins.users.router import router as admin_users_router
 app = FastAPI()
 
 
+@app.get("/api/test")
+async def root():
+    return {"message": "Hello World"}
+
+
 app.mount("/media", StaticFiles(directory="app/media"), name="media")
 
 
