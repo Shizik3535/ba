@@ -6,4 +6,5 @@ dbcreate:
 	-e POSTGRES_DB=lite \
 	-p 5432:5432 \
 	-v postgres_data:/var/lib/postgresql/data \
+	--network api-net \
 	postgres:15-alpine
